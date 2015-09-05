@@ -1,0 +1,31 @@
+<h1>Listing foto_lojas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Binariofoto</th>
+      <th>Data</th>
+      <th>Id local</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @foto_lojas.each do |foto_loja| %>
+      <tr>
+        <td><%= foto_loja.nome %></td>
+        <td><%= foto_loja.binariofoto %></td>
+        <td><%= foto_loja.data %></td>
+        <td><%= foto_loja.Id_Local %></td>
+        <td><%= link_to 'Show', foto_loja %></td>
+        <td><%= link_to 'Edit', edit_foto_loja_path(foto_loja) %></td>
+        <td><%= link_to 'Destroy', foto_loja, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Foto loja', new_foto_loja_path %>

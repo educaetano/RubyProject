@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_loja: 
+  nome: MyString
+  morada: MyString
+  latitude: MyString
+  longitude: MyString
+  activo: false
+
+two:
+  id_loja: 
+  nome: MyString
+  morada: MyString
+  latitude: MyString
+  longitude: MyString
+  activo: false

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  dataInicio: 2015-08-30 17:08:25
+  dataFim: 2015-08-30 17:08:25
+  activo: false
+  tipoPromo: 1
+  descricao: MyString
+  Id_Loja: 1
+
+two:
+  nome: MyString
+  dataInicio: 2015-08-30 17:08:25
+  dataFim: 2015-08-30 17:08:25
+  activo: false
+  tipoPromo: 1
+  descricao: MyString
+  Id_Loja: 1

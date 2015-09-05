@@ -1,0 +1,38 @@
+<%= form_for(@loja) do |f| %>
+  <% if @loja.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@loja.errors.count, "error") %> prohibited this loja from being saved:</h2>
+
+      <ul>
+      <% @loja.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ 
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :morada %><br>
+    <%= f.text_field :morada %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :activo %><br>
+    <%= f.check_box :activo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

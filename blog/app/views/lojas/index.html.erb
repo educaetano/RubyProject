@@ -1,0 +1,35 @@
+<h1>Listing lojas</h1>
+
+<table>
+  <thead>
+    <tr>
+    
+      <th>Nome</th>
+      <th>Morada</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Activo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lojas.each do |loja| %>
+      <tr>
+       
+        <td><%= loja.nome %></td>
+        <td><%= loja.morada %></td>
+        <td><%= loja.latitude %></td>
+        <td><%= loja.longitude %></td>
+        <td><%= loja.activo %></td>
+        <td><%= link_to 'Show', loja %></td>
+        <td><%= link_to 'Edit', edit_loja_path(loja) %></td>
+        <td><%= link_to 'Destroy', loja, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Loja', new_loja_path %>

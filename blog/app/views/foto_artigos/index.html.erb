@@ -1,0 +1,31 @@
+<h1>Listing foto_artigos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Binariofoto</th>
+      <th>Data</th>
+      <th>Id artigo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @foto_artigos.each do |foto_artigo| %>
+      <tr>
+        <td><%= foto_artigo.nome %></td>
+        <td><%= foto_artigo.binariofoto %></td>
+        <td><%= foto_artigo.data %></td>
+        <td><%= foto_artigo.Id_artigo %></td>
+        <td><%= link_to 'Show', foto_artigo %></td>
+        <td><%= link_to 'Edit', edit_foto_artigo_path(foto_artigo) %></td>
+        <td><%= link_to 'Destroy', foto_artigo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Foto artigo', new_foto_artigo_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  preco: 9.99
+  desconto: 1
+  id_promo: 1
+
+two:
+  nome: MyString
+  preco: 9.99
+  desconto: 1
+  id_promo: 1

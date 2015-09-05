@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @artigo.nome %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @artigo.preco %>
+</p>
+
+<p>
+  <strong>Desconto:</strong>
+  <%= @artigo.desconto %>
+</p>
+
+<p>
+  <strong>Id promo:</strong>
+  <%= @artigo.id_promo %>
+</p>
+
+<%= link_to 'Edit', edit_artigo_path(@artigo) %> |
+<%= link_to 'Back', artigos_path %>

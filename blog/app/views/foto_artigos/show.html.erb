@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @foto_artigo.nome %>
+</p>
+
+<p>
+  <strong>Binariofoto:</strong>
+  <%= @foto_artigo.binariofoto %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @foto_artigo.data %>
+</p>
+
+<p>
+  <strong>Id artigo:</strong>
+  <%= @foto_artigo.Id_artigo %>
+</p>
+
+<%= link_to 'Edit', edit_foto_artigo_path(@foto_artigo) %> |
+<%= link_to 'Back', foto_artigos_path %>

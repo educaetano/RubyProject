@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @promo.nome %>
+</p>
+
+<p>
+  <strong>Datainicio:</strong>
+  <%= @promo.dataInicio %>
+</p>
+
+<p>
+  <strong>Datafim:</strong>
+  <%= @promo.dataFim %>
+</p>
+
+<p>
+  <strong>Activo:</strong>
+  <%= @promo.activo %>
+</p>
+
+<p>
+  <strong>Tipopromo:</strong>
+  <%= @promo.tipoPromo %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @promo.descricao %>
+</p>
+
+<p>
+  <strong>Id loja:</strong>
+  <%= @promo.Id_Loja %>
+</p>
+
+<%= link_to 'Edit', edit_promo_path(@promo) %> |
+<%= link_to 'Back', promos_path %>

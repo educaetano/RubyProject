@@ -1,0 +1,33 @@
+<%= form_for(@foto_artigo) do |f| %>
+  <% if @foto_artigo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@foto_artigo.errors.count, "error") %> prohibited this foto_artigo from being saved:</h2>
+
+      <ul>
+      <% @foto_artigo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :binariofoto %><br>
+    <%= f.text_field :binariofoto %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.datetime_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :Id_artigo %><br>
+    <%= f.number_field :Id_artigo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

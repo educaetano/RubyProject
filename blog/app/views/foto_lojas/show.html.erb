@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @foto_loja.nome %>
+</p>
+
+<p>
+  <strong>Binariofoto:</strong>
+  <%= @foto_loja.binariofoto %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @foto_loja.data %>
+</p>
+
+<p>
+  <strong>Id local:</strong>
+  <%= @foto_loja.Id_Local %>
+</p>
+
+<%= link_to 'Edit', edit_foto_loja_path(@foto_loja) %> |
+<%= link_to 'Back', foto_lojas_path %>

@@ -1,0 +1,35 @@
+<%= form_for(@foto_loja) do |f| %>
+  <% if @foto_loja.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@foto_loja.errors.count, "error") %> prohibited this foto_loja from being saved:</h2>
+
+      <ul>
+      <% @foto_loja.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :binariofoto %><br>
+    <%= f.text_field :binariofoto %>
+  </div>
+  <div class="field">
+    <%= f.label :Data %><br>
+    <%= f.datetime_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :Loja %><br>
+   	
+    <%= collection_select(:foto_loja, :Id_Local, Loja.all, :id, :nome, {:prompt => "Selecccione uma loja"}) %> 
+
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

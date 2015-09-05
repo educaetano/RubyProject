@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  binariofoto: 
+  data: 2015-08-30 17:06:43
+  Id_Local: 1
+
+two:
+  nome: MyString
+  binariofoto: 
+  data: 2015-08-30 17:06:43
+  Id_Local: 1

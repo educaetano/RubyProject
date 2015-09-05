@@ -1,0 +1,31 @@
+<h1>Listing artigos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Preco</th>
+      <th>Desconto</th>
+      <th>Id promo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @artigos.each do |artigo| %>
+      <tr>
+        <td><%= artigo.nome %></td>
+        <td><%= artigo.preco %></td>
+        <td><%= artigo.desconto %></td>
+        <td><%= artigo.id_promo %></td>
+        <td><%= link_to 'Show', artigo %></td>
+        <td><%= link_to 'Edit', edit_artigo_path(artigo) %></td>
+        <td><%= link_to 'Destroy', artigo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Artigo', new_artigo_path %>
